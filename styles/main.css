@@ -247,3 +247,11 @@ ul {
     margin: 24px auto 0;
     padding: 24px 0;
 }
+
+.section-box-title {
+    font-size: 2em;
+}
+
+.section-box-text {
+    font-size: 1.5em;
+}
