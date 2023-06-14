@@ -1,0 +1,249 @@
+:root {
+    --colors-scale6: #343434;
+    --tw-gradient-stops: rgba(0, 0, 0, 0), rgb(52, 52, 52), rgba(0, 0, 0, 0)
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+    color: rgb(230, 236, 233);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    border-bottom: 1px solid rgb(44, 44, 44);
+    padding: 0.8rem 1rem;
+    background-color: #1c1c1c;
+}
+
+.nav-left {
+    margin-right: 1rem;
+}
+
+.nav-center {
+    flex: 1 0 auto;
+    padding: 0 1rem;
+}
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-item {
+    margin-right: 0.8rem;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: rgb(230, 236, 233);
+}
+.menu-item a:hover {
+    color: #3fcf8e;
+}
+
+.main {
+    padding: 1rem 0;
+}
+
+.intro {
+    padding-top: 60px;
+    max-width: 100%;
+
+}
+
+
+.intro-box {
+    text-align: center;
+    color: #ededed;
+}
+
+.intro_description {
+    margin: 0 auto 64px;
+}
+
+@media (min-width: 1200px) {
+    .intro_title {
+        font-size:7rem
+    }
+
+    .intro_description {
+        font-size: 1.5rem;
+        max-width: 780px
+    }
+}
+
+@media (max-width: 960px) {
+    .intro_title {
+        display:flex;
+        flex-direction: column;
+        font-size: 6rem
+    }
+}
+
+@media (max-width: 720px) {
+    .intro_title {
+        font-size:4.5rem
+    }
+}
+
+@media (min-height: 1120px) {
+    .intro_title {
+        display:flex;
+        flex-direction: column;
+        font-size: 8rem;
+        margin-bottom: 24px
+    }
+}
+
+.intro_button {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto 96px;
+}
+
+.intro_button_btn {
+    outline: 0;
+    background-color: rgb(43, 130, 91);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid rgb(43, 130, 91);
+    transition: background-color 0.3s;
+}
+
+.intro_button_link:hover .intro_button_btn {
+    background-color: transparent;
+    color: rgb(43, 130, 91);
+}
+
+.truncate {
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.text-ellipsis,.truncate {
+    text-overflow: ellipsis
+}
+
+.diver {
+    width: 50%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.to-transparent {
+    --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+.via-scale-600 {
+    --tw-gradient-to: hsla(0,0%,100%,0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--colors-scale6) var(--tw-gradient-via-position),var(--tw-gradient-to);
+}
+.from-transparent {
+    --tw-gradient-from: transparent var(--tw-gradient-from-position);
+    --tw-gradient-to: transparent var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+}
+
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(52, 52, 52), rgba(0, 0, 0, 0));
+}
+
+.section-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 96px auto;
+}
+
+.section-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.section-item img {
+    max-width: 100%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.section-left, .section-right {
+    flex: 1 0 auto;
+    width: 50%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.section-left {
+    display: flex;
+    align-items: center;
+}
+
+.section-text {
+    padding: 0 1rem;
+}
+
+.section-box-title {
+   color: #3fcf8e;
+}
+
+.footer {
+    border-top: 1px solid #343434;
+    padding: 64px 24px;
+    font-size: .875rem;
+}
+
+.footer_marketingFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_group {
+    margin-right: 24px;
+    width: 200px;
+}
+
+.footer_item {
+    padding: 8px 0;
+}
+
+.footer_item a {
+    color: #888;
+    transition: color .1s ease;
+    text-decoration: none;
+}
+
+.footer_item a:hover {
+    color: #fff;
+}
+
+.footer_header {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 12px 0;
+}
+
+.footer-logo {
+    margin-right: 24px;
+    width: 180px;
+}
+
+.copyright-box {
+    text-align: center;
+    margin: 24px auto 0;
+    padding: 24px 0;
+}
